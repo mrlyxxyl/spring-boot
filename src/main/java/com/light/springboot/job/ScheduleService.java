@@ -18,11 +18,11 @@ public class ScheduleService {
 
     @Scheduled(cron = "*/3 * * * * ?")
     private void process() {
-        System.out.println("this is job task running  " + (count++));
+        System.out.println(Thread.currentThread().getName() + "\tthis is job task running  " + (count++));
     }
 
     @Scheduled(fixedRate = 3000)
     public void reportCurrentTime() {
-        System.out.println("当前时间：" + dateFormat.format(new Date()));
+        System.out.println(Thread.currentThread().getName() + "\t当前时间：" + dateFormat.format(new Date()));
     }
 }

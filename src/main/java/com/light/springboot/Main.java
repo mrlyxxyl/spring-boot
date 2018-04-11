@@ -19,10 +19,15 @@ public class Main {
         SpringApplication.run(Main.class, args);
     }
 
+    /**
+     * 多线程执行定时任务
+     *
+     * @return
+     */
     @Bean
     public TaskScheduler taskScheduler() {
         ThreadPoolTaskScheduler taskScheduler = new ThreadPoolTaskScheduler();
-        taskScheduler.setPoolSize(20);//线程池大小
+        taskScheduler.setPoolSize(5);//线程池大小
         taskScheduler.setThreadNamePrefix("spring-boot-task");
         return taskScheduler;
     }
