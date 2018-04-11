@@ -24,3 +24,7 @@
 
 参考地址：
     https://www.cnblogs.com/ityouknow/p/6834287.html?utm_source=itdadao&utm_medium=referral
+
+六、修改application.properties文件的server.port可以设置服务端口
+
+七、ScheduleService为定时任务
