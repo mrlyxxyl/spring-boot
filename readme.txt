@@ -14,13 +14,13 @@
     打包完成后jar包会生成到target目录下，命名一般是 项目名+版本号.jar
 
     启动jar包命令
-    java -jar target/spring-boot-scheduler-1.0.0.jar
+    java -jar spring-boot-1.0-SNAPSHOT.jar --server.port=8080
 
     这种方式，只要控制台关闭，服务就不能访问了。下面我们使用在后台运行的方式来启动:
-    nohup java -jar target/spring-boot-scheduler-1.0.0.jar &
+    nohup java -jar spring-boot-1.0-SNAPSHOT.jar --server.port=8080 &
 
     也可以在启动的时候选择读取不同的配置文件
-    nohup java -jar spring-boot-1.0-SNAPSHOT.jar --spring.profiles.active=dev &
+    nohup java -jar spring-boot-1.0-SNAPSHOT.jar --spring.profiles.active=dev --server.port=8080 &
 
 参考地址：
     https://www.cnblogs.com/ityouknow/p/6834287.html?utm_source=itdadao&utm_medium=referral
