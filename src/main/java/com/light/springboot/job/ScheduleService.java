@@ -16,12 +16,12 @@ public class ScheduleService {
     private int count = 0;
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
-    @Scheduled(cron = "*/6 * * * * ?")
+    @Scheduled(cron = "*/3 * * * * ?")
     private void process() {
         System.out.println("this is job task running  " + (count++));
     }
 
-    @Scheduled(fixedRate = 6000)
+    @Scheduled(fixedRate = 3000)
     public void reportCurrentTime() {
         System.out.println("当前时间：" + dateFormat.format(new Date()));
     }
