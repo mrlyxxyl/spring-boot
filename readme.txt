@@ -19,7 +19,7 @@
     这种方式，只要控制台关闭，服务就不能访问了。下面我们使用在后台运行的方式来启动:
     nohup java -jar spring-boot-1.0-SNAPSHOT.jar --server.port=8080 &
 
-    也可以在启动的时候选择读取不同的配置文件
+    也可以在启动的时候选择读取不同的配置文件,可以利用启动方式不同来做负载均衡
     nohup java -jar spring-boot-1.0-SNAPSHOT.jar --spring.profiles.active=dev --server.port=8080 &
 
 参考地址：
