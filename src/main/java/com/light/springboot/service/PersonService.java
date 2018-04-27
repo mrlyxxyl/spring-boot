@@ -1,10 +1,12 @@
 package com.light.springboot.service;
 
 
+import com.light.springboot.bean.Person;
 import com.light.springboot.dao.PersonDao;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * User: LiWenC
@@ -17,5 +19,9 @@ public class PersonService {
 
     public int count() {
         return personDao.count();
+    }
+
+    public List<Person> queryPersons() {
+        return personDao.queryPersons();
     }
 }

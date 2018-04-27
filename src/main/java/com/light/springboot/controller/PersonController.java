@@ -1,5 +1,6 @@
 package com.light.springboot.controller;
 
+import com.light.springboot.bean.Person;
 import com.light.springboot.constant.GenResult;
 import com.light.springboot.constant.SysProperties;
 import com.light.springboot.service.PersonService;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -32,6 +34,17 @@ public class PersonController {
             LogUtil.info(count);
             LogUtil.info("server id: " + sysProperties.getServerId());
             return GenResult.SUCCESS.genResult(count);
+        } catch (Exception e) {
+            LogUtil.error(e);
+            return GenResult.UNKNOWN_ERROR.genResult();
+        }
+    }
+
+    @GetMapping("persons")
+    public Map<String, Object> persons() {
+        try {
+            List<Person> persons = personService.queryPersons();
+            return GenResult.SUCCESS.genResult(persons);
         } catch (Exception e) {
             LogUtil.error(e);
             return GenResult.UNKNOWN_ERROR.genResult();
