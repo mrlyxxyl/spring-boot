@@ -12,6 +12,6 @@ public class IndexController {
 
     @RequestMapping(value = "/")
     public String index() {
-        return "<div style='width:100%; text-align:center;font-size:60px;color:red;'>success!</div>";
+        return "<div style='width:100%; text-align:center;font-size:60px;color:red;'>start success!</div>";
     }
 }
