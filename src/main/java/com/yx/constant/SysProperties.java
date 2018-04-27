@@ -1,4 +1,4 @@
-package com.light.springboot.constant;
+package com.yx.constant;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

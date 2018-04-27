@@ -1,4 +1,4 @@
-package com.light.springboot.job;
+package com.yx.job;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;

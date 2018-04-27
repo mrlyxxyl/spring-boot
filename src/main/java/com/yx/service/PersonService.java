@@ -1,8 +1,8 @@
-package com.light.springboot.service;
+package com.yx.service;
 
 
-import com.light.springboot.bean.Person;
-import com.light.springboot.dao.PersonDao;
+import com.yx.bean.Person;
+import com.yx.dao.PersonDao;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

@@ -1,10 +1,10 @@
-package com.light.springboot.controller;
+package com.yx.controller;
 
-import com.light.springboot.bean.Person;
-import com.light.springboot.constant.GenResult;
-import com.light.springboot.constant.SysProperties;
-import com.light.springboot.service.PersonService;
-import com.light.springboot.util.LogUtil;
+import com.yx.bean.Person;
+import com.yx.constant.GenResult;
+import com.yx.constant.SysProperties;
+import com.yx.service.PersonService;
+import com.yx.util.LogUtil;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

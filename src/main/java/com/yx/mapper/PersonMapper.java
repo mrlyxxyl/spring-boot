@@ -1,6 +1,6 @@
-package com.light.springboot.mapper;
+package com.yx.mapper;
 
-import com.light.springboot.bean.Person;
+import com.yx.bean.Person;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

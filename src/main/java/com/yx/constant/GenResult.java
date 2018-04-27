@@ -1,4 +1,4 @@
-package com.light.springboot.constant;
+package com.yx.constant;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

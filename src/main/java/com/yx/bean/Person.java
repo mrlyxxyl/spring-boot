@@ -1,4 +1,4 @@
-package com.light.springboot.bean;
+package com.yx.bean;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

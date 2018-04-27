@@ -1,4 +1,4 @@
-package com.light.springboot.util;
+package com.yx.util;
 
 import org.apache.log4j.Logger;
 
