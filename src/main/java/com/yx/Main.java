@@ -31,4 +31,22 @@ public class Main {
         taskScheduler.setThreadNamePrefix("spring-boot-task");
         return taskScheduler;
     }
+    
+    /**
+     * 返回数据显示驼峰标示
+     * @return
+     */
+    @Bean
+    public MappingJackson2HttpMessageConverter jsonConverter() {
+        MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
+        ObjectMapper mapper = new ObjectMapper();
+        com.fasterxml.jackson.databind.PropertyNamingStrategy.LowerCaseWithUnderscoresStrategy strategy = new com.fasterxml.jackson.databind.PropertyNamingStrategy.LowerCaseWithUnderscoresStrategy();
+        mapper.setPropertyNamingStrategy(strategy);
+        converter.setObjectMapper(mapper);
+        List<MediaType> list = new ArrayList<MediaType>();
+        list.add(MediaType.parseMediaType("text/html;charset=UTF-8"));
+        list.add(MediaType.parseMediaType("application/json; charset=UTF-8"));
+        converter.setSupportedMediaTypes(list);
+        return converter;
+    }
 }
