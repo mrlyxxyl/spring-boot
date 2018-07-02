@@ -2,7 +2,6 @@ package com.yx.controller;
 
 import com.yx.bean.Person;
 import com.yx.constant.GenResult;
-import com.yx.constant.SysProperties;
 import com.yx.service.PersonService;
 import com.yx.util.LogUtil;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,15 +24,11 @@ public class PersonController {
     @Resource
     private PersonService personService;
 
-    @Resource
-    private SysProperties sysProperties;
-
     @GetMapping("count")
     public Map<String, Object> count() {
         try {
             int count = personService.count();
             LogUtil.info(count);
-            LogUtil.info("server id: " + sysProperties.getServerId());
             return GenResult.SUCCESS.genResult(count);
         } catch (Exception e) {
             LogUtil.error(e);

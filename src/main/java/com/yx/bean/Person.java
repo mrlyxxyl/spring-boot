@@ -1,7 +1,5 @@
 package com.yx.bean;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 import java.io.Serializable;
 
 /**
@@ -13,7 +11,6 @@ public class Person implements Serializable {
 
     private int id;
 
-    @JsonProperty(value = "user_name")
     private String userName;
 
     private int age;

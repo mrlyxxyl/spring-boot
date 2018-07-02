@@ -16,3 +16,5 @@ spring:
     testOnBorrow: false
     testOnReturn: false
     poolPreparedStatements: true
+  profiles:
+    active: dev
