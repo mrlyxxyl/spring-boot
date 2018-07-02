@@ -3,8 +3,9 @@ package com.yx.util;
 import org.apache.log4j.Logger;
 
 /**
- * User: LiWenC
  * Date: 18-4-26
+ *
+ * @author NMY
  */
 public class LogUtil {
 

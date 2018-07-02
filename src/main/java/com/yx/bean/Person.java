@@ -5,8 +5,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
 
 /**
- * User: LiWenC
  * Date: 18-4-27
+ *
+ * @author NMY
  */
 public class Person implements Serializable {
 

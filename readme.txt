@@ -1,10 +1,4 @@
-一、包名必须以com.light.springboot开头
-二、Main启动程序需要放在com.light.springboot包下
-三、控制台出现Tomcat started on port(s): 8080 (http)表示启动成功！
-四、启动成功后浏览器访问地址进行验证
-    http://localhost:8080/person/count
-
-五、打成jar包运行
+一、打成jar包运行
     cd 项目跟目录（和pom.xml同级）
     mvn clean package
     ## 或者执行下面的命令
@@ -25,6 +19,6 @@
 参考地址：
     https://www.cnblogs.com/ityouknow/p/6834287.html?utm_source=itdadao&utm_medium=referral
 
-六、修改application.properties文件的server.port可以设置服务端口
+二、修改application.properties文件的server.port可以设置服务端口
 
-七、ScheduleService为定时任务
+三、ScheduleService为定时任务

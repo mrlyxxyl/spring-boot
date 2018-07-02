@@ -7,8 +7,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * User: LiWenC
  * Date: 18-4-11
+ *
+ * @author NMY
  */
 @Component
 public class ScheduleService {

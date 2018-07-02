@@ -4,8 +4,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * User: LiWenC
  * Date: 18-4-11
+ *
+ * @author NMY
  */
 @RestController
 public class IndexController {
