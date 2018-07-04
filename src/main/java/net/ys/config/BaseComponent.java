@@ -1,4 +1,4 @@
-package com.yx.config;
+package net.ys.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.annotation.Bean;

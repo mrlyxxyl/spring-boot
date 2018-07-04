@@ -1,8 +1,8 @@
-package com.yx.service;
+package net.ys.service;
 
 
-import com.yx.bean.Person;
-import com.yx.dao.PersonDao;
+import net.ys.bean.Person;
+import net.ys.dao.PersonDao;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

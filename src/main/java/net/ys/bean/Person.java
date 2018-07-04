@@ -1,4 +1,4 @@
-package com.yx.bean;
+package net.ys.bean;
 
 import java.io.Serializable;
 

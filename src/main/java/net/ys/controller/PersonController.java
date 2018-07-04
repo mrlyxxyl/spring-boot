@@ -1,9 +1,9 @@
-package com.yx.controller;
+package net.ys.controller;
 
-import com.yx.bean.Person;
-import com.yx.constant.GenResult;
-import com.yx.service.PersonService;
-import com.yx.util.LogUtil;
+import net.ys.bean.Person;
+import net.ys.constant.GenResult;
+import net.ys.service.PersonService;
+import net.ys.util.LogUtil;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

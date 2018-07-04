@@ -1,4 +1,4 @@
-package com.yx.constant;
+package net.ys.constant;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

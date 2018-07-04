@@ -1,4 +1,4 @@
-package com.yx.util;
+package net.ys.util;
 
 import org.apache.log4j.Logger;
 

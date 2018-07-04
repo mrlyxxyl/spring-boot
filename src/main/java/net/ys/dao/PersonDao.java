@@ -1,7 +1,7 @@
-package com.yx.dao;
+package net.ys.dao;
 
-import com.yx.bean.Person;
-import com.yx.mapper.PersonMapper;
+import net.ys.bean.Person;
+import net.ys.mapper.PersonMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
