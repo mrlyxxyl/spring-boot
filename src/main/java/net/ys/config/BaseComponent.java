@@ -45,7 +45,6 @@ public class BaseComponent {
         mapper.setPropertyNamingStrategy(strategy);
         converter.setObjectMapper(mapper);
         List<MediaType> list = new ArrayList<>();
-        list.add(MediaType.parseMediaType("text/html;charset=UTF-8"));
         list.add(MediaType.parseMediaType("application/json; charset=UTF-8"));
         converter.setSupportedMediaTypes(list);
         return converter;
